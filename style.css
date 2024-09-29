@@ -53,3 +53,11 @@ button {
     border: 0;
     padding: 20px;
 }
+
+button:hover {
+    background-color: #2a8d12;
+}
+
+.options button {
+    display: block;
+}
