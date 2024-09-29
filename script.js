@@ -196,3 +196,30 @@ function clockTick() {
     }
 }
 
+// Save score in Local storage
+// Along with users' name
+
+function saveHighscore() {
+    let name = nameEl.value.trim();
+    if (name !== "") {
+        let highscores =
+        JSON.parse(
+            window.localStorage.getItem(
+                "highscores"
+            )
+        ) || [];
+        let newScore = {
+            score: time,
+            name: name,
+        };
+        highscores.push(newScore);
+        window.localStorage.setItem(
+            "highscores",
+            JSON.stringify(highscores)
+        );
+        alert(
+            "Your Score has been Submitted"
+        );
+    }
+}
+
