@@ -42,3 +42,14 @@ p {
     top: 15px;
     right: 15px;
 }
+
+button {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #52865a;
+    border-radius: 5px;
+    border: 0;
+    padding: 20px;
+}
