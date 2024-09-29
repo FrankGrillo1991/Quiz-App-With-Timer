@@ -86,3 +86,35 @@ function quizStart() {
     );
     getQuestion();
 }
+
+// Loop through array of questions and
+// Answers and create List with buttons
+function getQuestion() {
+    let currentQuestion = 
+        questions[currentQuestionIndex];
+    let prompEl =
+        document.getElementById(
+            "question-words"
+        );
+    promptEl.textContent =
+        currentQuestion.prompt;
+    choicesEl.innerHTML = "";
+    currentQuestion.options.forEach(
+        function (choice, i) {
+            let choiceBtn = document.createElement(
+                "button"
+            );
+        choiceBtn.setAttribute(
+            "value",
+            choice
+        );
+        choiceBtn.textContent =
+        i + 1 + ". " + choice;
+        choiceBtn.onclick =
+        questionClick;
+        choicesEl.appendChild(
+            choiceBtn
+        );
+        }
+    );
+}
