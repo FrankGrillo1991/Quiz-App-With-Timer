@@ -65,3 +65,24 @@ let reStartBtn = document.querySelector("#restart");
 let currentQuestionIndex = 0;
 let time = questions.length * 15;
 let timerId;
+
+// Start quix and hide frontpage
+function quizStart() {
+    timerId = setInterval(
+        clockTick,
+        1000
+    );
+    timerEl.textContent = time;
+    let landingScreen = 
+        document.getElementById(
+            "start-screen"
+        );
+    landingScreenEl.setAttribute(
+        "class",
+        "hide"
+    );
+    questionsEl.removeAttribute(
+        "class"
+    );
+    getQuestion();
+}
