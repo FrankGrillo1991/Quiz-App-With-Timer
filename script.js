@@ -7,7 +7,7 @@ let questions = [
             "<script>",
             "<scripting>",
         ],
-        answer: "<script>"
+        answer: "<script>",
     },
 
     {
@@ -18,7 +18,7 @@ let questions = [
             "call function myFunction",
             "Call.myFunction",
         ],
-        answer: "myFunction()"
+        answer: "myFunction()",
     },
 
     {
@@ -29,13 +29,13 @@ let questions = [
             "for i = 1 to 5",
             " for (i <= 5; i++)",
         ],
-        answer: "for (i = 0; i <= 5; i++)"
+        answer: "for (i = 0; i <= 5; i++)",
     },
 
     {
         prompt: `In JavaScript, which of the following is the logical operator?` ,
         options: ["|", "&&", "%", "/"],
-        answer: "&&"
+        answer: "&&".
     }, 
 
     {
@@ -46,7 +46,7 @@ let questions = [
             "letiable",
             "string",
         ],
-        answer: "letiable"
+        answer: "letiable",
     }
 ];
 
