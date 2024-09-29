@@ -118,3 +118,48 @@ function getQuestion() {
         }
     );
 }
+
+
+// Check for right answers and deduct
+// Time for wrong answer, go to next question
+
+function questionClick() {
+    if (
+        this.value !== 
+        questions[currentQuestionIndex]
+        .answer
+    ) {
+        time -= 10;
+        if (time < 0) {
+            time = 0;
+        }
+        timerEl.textContent = time;
+        feedbackEl.textContent = `Wrong! The correct answer was
+        ${questions[currentQuestionIndex].answer}.`;
+        feedbackEl.style.color = "red";
+    } else {
+        feedbackEl.textContent = 
+        "Correct!";
+        feedbackEl.style.color =
+        "green";
+    }
+    feedbackEl.setAttribute(
+        "class",
+        "feedback hide"
+    );
+    setTimeout(function () {
+        feedbackEl.setAttribute(
+            "class",
+            "feedback hide"
+        );
+    }, 2000);
+    currentQuestionIndex++;
+    if (
+        currentQuestionIndex ===
+        questions.length
+    ) {
+        quizEnd();
+    } else {
+        getQuestion();
+    }
+}
