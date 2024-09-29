@@ -30,3 +30,9 @@ p {
 .landing {
     text-align: center;
 }
+
+.scoresHeader {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
