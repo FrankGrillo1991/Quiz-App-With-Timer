@@ -34,3 +34,15 @@ function printHighscores() {
     });
 }
 
+// Clear previous scores when users click clear
+function clearHighscores() {
+    window.localStorage.removeItem(
+        "highscores"
+    );
+    window.location.reload();
+}
+document.getElementById(
+    "clear"
+).onclick = clearHighscores;
+
+printHighscores();
