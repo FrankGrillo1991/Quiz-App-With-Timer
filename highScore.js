@@ -13,7 +13,7 @@ function printHighscores() {
             )
         ) || [];
     highscores.sort(function (a, b) {
-        return .score - a.score;
+        return b.score - a.score;
     });
     highscores.forEach(function (
         score
