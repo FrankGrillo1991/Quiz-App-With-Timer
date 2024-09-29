@@ -163,3 +163,27 @@ function questionClick() {
         getQuestion();
     }
 }
+
+// End quiz by hiding questions,
+// Stop timer and show final score
+
+function quizEnd() {
+    clearInterval(timerId);
+    let endScreenEl =
+        document.getElementById(
+            "quiz-end"
+        );
+    endScreenEl.removeAttribute(
+        "class"
+    );
+    let finalScoreEl =
+    document.getElementById(
+        "score-final"
+    );
+    finalScoreEl.textContent = time;
+    questionsEl.setAttribute(
+        "class",
+        "hide"
+    );
+}
+
