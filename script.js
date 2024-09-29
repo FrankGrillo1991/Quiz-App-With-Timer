@@ -223,3 +223,22 @@ function saveHighscore() {
     }
 }
 
+// Save users' score after pressing enter
+
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighscore();
+        alert(
+            "Your Score has been Submitted"
+        );
+    }
+}
+nameEl.onkeyup = checkForEnter;
+
+// Save users' score after clicking submit
+
+submitBtn.onclick = saveHighscore;
+
+// Start quiz after clicking start quiz
+
+startBtn.onclick = quizStart;
