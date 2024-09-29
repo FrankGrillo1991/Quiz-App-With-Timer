@@ -50,3 +50,18 @@ let questions = [
     }
 ];
 
+// Get Dom Elements
+
+let questionsEl = document.querySelector("#questions");
+let timerEl = document.querySelector("#timer");
+let choicesEl = document.querySelector("#options");
+let submitBtn = document.querySelector("#submit-score");
+let startBtn = document.querySelector("#start");
+let nameEl = document.querySelector("#name");
+let feedbackEl = document.querySelector("#feedback");
+let reStartBtn = document.querySelector("#restart");
+
+// Quiz's initial state
+let currentQuestionIndex = 0;
+let time = questions.length * 15;
+let timerId;
