@@ -35,7 +35,7 @@ let questions = [
     {
         prompt: `In JavaScript, which of the following is the logical operator?` ,
         options: ["|", "&&", "%", "/"],
-        answer: "&&".
+        answer: "&&",
     }, 
 
     {
@@ -73,7 +73,7 @@ function quizStart() {
         1000
     );
     timerEl.textContent = time;
-    let landingScreen = 
+    let landingScreenEl = 
         document.getElementById(
             "start-screen"
         );
