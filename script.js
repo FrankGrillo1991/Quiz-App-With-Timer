@@ -187,3 +187,12 @@ function quizEnd() {
     );
 }
 
+// End quiz if timer reaches 0
+function clockTick() {
+    time--;
+    timerEl.textContent = time;
+    if (time <= 0) {
+        quizEnd();
+    }
+}
+
