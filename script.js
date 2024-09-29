@@ -11,7 +11,7 @@ let questions = [
     },
 
     {
-        prompt: `How do you call a function named myFunction?` ,
+        prompt: `How do you call a function named myFunction?`,
         options: [
             "call myFunction()",
             "myFunction()",
@@ -22,7 +22,7 @@ let questions = [
     },
 
     {
-        prompt: `How does a for loop start?` ,
+        prompt: `How does a for loop start?`,
         options: [
             "for (i = 0; i <= 5; i++)",
             "for (i = 0; i <= 5)",
@@ -33,7 +33,7 @@ let questions = [
     },
 
     {
-        prompt: `In JavaScript, which of the following is the logical operator?` ,
+        prompt: `In JavaScript, which of the following is the logical operator?`,
         options: ["|", "&&", "%", "/"],
         answer: "&&",
     }, 
