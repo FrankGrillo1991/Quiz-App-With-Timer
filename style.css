@@ -61,3 +61,7 @@ button:hover {
 .options button {
     display: block;
 }
+
+input[type="text"] {
+    font-size: 100%;
+}
