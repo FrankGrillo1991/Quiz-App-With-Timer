@@ -36,6 +36,17 @@ let questions = [
         prompt: `In JavaScript, which of the following is the logical operator?` ,
         options: ["|", "&&", "%", "/"],
         answer: "&&"
-    },
+    }, 
 
+    {
+        prompt: `A named element in a JavaScript program that is used to store and retrieve data is a _____.`,
+        options: [
+            "method",
+            "assignment operator",
+            "letiable",
+            "string",
+        ],
+        answer: "letiable"
+    }
 ];
+
